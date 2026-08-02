@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #eee;
+    padding: 40px 20px;
+  }
+
+  .gallery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+.gallery-column{
+  max-width: 20%;
+  flex:20%;
+  padding:4px;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-column img{
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+/* 3 columns */
+@media all and (max-width:1200px){     
+  .gallery-column{
+  max-width: 33.333%;
+  flex: 33.333%;
+}
+}
+/* 2 columns in tablet*/
+@media all and (max-width:960px){
+  .gallery-column{
+  max-width: 50%;
+  flex: 50%;
+}
+}
+/* 1 column in mobile phone */
+@media all and (max-width:500px){
+  .gallery-column{
+  max-width: 100%;
+  flex: 100%;
+}
+}
+  
+</style>
+</head>
+<body>
+
+  <h1 class="gallery-title">Art Gallery</h1>
+
+  <div class="gallery">
+
+    <!-- Column 1 -->
+    <div class="gallery-column">
+      <div class="gallery-item"><img src="https://picsum.photos/id/10/400/550" alt="Art 1"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/11/400/300" alt="Art 2"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/12/400/450" alt="Art 3"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/13/400/350" alt="Art 4"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/14/400/500" alt="Art 5"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/15/400/320" alt="Art 6"></div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="gallery-column">
+      <div class="gallery-item"><img src="https://picsum.photos/id/16/400/300" alt="Art 7"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/17/400/480" alt="Art 8"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/18/400/360" alt="Art 9"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/19/400/520" alt="Art 10"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/20/400/300" alt="Art 11"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/21/400/400" alt="Art 12"></div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="gallery-column">
+      <div class="gallery-item"><img src="https://picsum.photos/id/22/400/500" alt="Art 13"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/23/400/340" alt="Art 14"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/24/400/460" alt="Art 15"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/25/400/300" alt="Art 16"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/26/400/420" alt="Art 17"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/27/400/360" alt="Art 18"></div>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="gallery-column">
+      <div class="gallery-item"><img src="https://picsum.photos/id/28/400/330" alt="Art 19"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/29/400/500" alt="Art 20"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/30/400/380" alt="Art 21"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/31/400/460" alt="Art 22"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/32/400/300" alt="Art 23"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/33/400/420" alt="Art 24"></div>
+    </div>
+
+    <!-- Column 5 -->
+    <div class="gallery-column">
+      <div class="gallery-item"><img src="https://picsum.photos/id/34/400/360" alt="Art 25"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/35/400/480" alt="Art 26"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/36/400/320" alt="Art 27"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/37/400/500" alt="Art 28"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/38/400/340" alt="Art 29"></div>
+      <div class="gallery-item"><img src="https://picsum.photos/id/39/400/420" alt="Art 30"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
